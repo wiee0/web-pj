@@ -131,9 +131,9 @@ iframe {
 .sidebar {
 
     border: none;
-    background-color: white;
-    width: 200px;
-    height: 350px;
+    background-color: #b2bec3;
+    width: 250px;
+    height: 380px;
     padding: 20px;
     
     border-radius: 5px;
@@ -152,6 +152,7 @@ iframe {
     font-size: 18px;
     color:#34495e;
     border-radius: 5px;
+    
 }
 
 
