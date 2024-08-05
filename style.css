@@ -2,29 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #dfe6e9;
     overflow: scroll;
     
+    
 }
+
+
 
 h1, h2, h3 {
     text-transform: uppercase;
 }
 
-a  {
-    font-size: large;
-    font-style: bolder;
-    text-decoration: none;
-    color: #f4f4f4;
-    padding: 20px;
-    margin: 10px;
-}
-
-a:hover {
-    color: rgb(102, 102, 112);
-    background-color: transparent;
-    
-}
 
 #header {
     padding: 5px;
@@ -42,26 +31,26 @@ a:hover {
     background-color:rgb(46, 100, 225);
 
 
+
 }
 
 .topnav a {
     float: left;
     display: block;
     color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
+    padding: 14px 50px;
     text-decoration: none;
     font-size: 17px;
-    border-right: 1px solid bisque;
+    border-right: 1px solid none;
   }
 
   .topnav a:hover {
-    background-color: #cdcbcb;
+    background-color: rgb(9, 68, 208);
     color: black;
   }
 
   .topnav a.active {
-    background-color: #2196F3;
+    background-color: rgb(20, 81, 223);
     color: white;
   }
 
@@ -91,13 +80,21 @@ a:hover {
     }
   }
   
+
+  
 .slider {
+    padding: 0 0 0;
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    height: 600px;
+    height: 50%;
+    max-height: 1000px;
     margin: auto;
+    text-align: left;
     overflow: hidden;
+
+
+    
+    ;
 }
 .slides {
     display: flex;
@@ -111,14 +108,7 @@ a:hover {
     width: 100%;
 }
 
-section {
-    border: none;
-    background-color: #ddd;
-    padding: 20px;
-    padding-top: 30px;
-    border-radius: 10px;
-    margin: 10px;
-}
+
 
 .footer {
     border: none;
@@ -137,3 +127,100 @@ section {
 iframe {
     text-align: center;
 }
+
+.sidebar {
+
+    border: none;
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    
+    border-radius: 5px;
+
+
+}
+
+
+.sidebar a{
+    text-align: left;
+    display: block;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 18px;
+    color:#34495e;
+    border-radius: 5px;
+}
+
+
+.sidebar a:hover {
+    background-color: #636e72;
+    color:white;
+
+}
+
+.notice {
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.board{
+    
+    border: none;
+    background-color: white;
+    position:absolute;
+   
+
+}
+
+.news {
+    border: none;
+    background-color: aqua;
+    float: right;
+}
+
+#intro {
+    text-align: left;
+        border: none;
+        background-color: white;
+        padding: 20px;
+        padding-top: 30px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    #admissions {
+
+            border: none;
+            background-color: white;
+            padding: 20px;
+            padding-top: 30px;
+            border-radius: 10px;
+            margin: 10px;
+        
+    }
+
+    #contact {
+        border: none;
+        text-align: center;
+            background-color: white;
+            padding: 20px;
+            padding-top: 30px;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden;
+    }
+
+
+.footer a {
+    color:#dcdcdc;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+
