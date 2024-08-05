@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,150 +8,115 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    * {box-sizing: border-box;}
+    * {
+        box-sizing: border-box;
+    }
 </style>
+
 <body>
     <div id="header">
-        
-        <h1>trường trung học phổ thông cao lộc</h1>  
-        <h2>        1967-2024</h2>
+        <h1>trường trung học phổ thông cao lộc</h1>
+        <h2>1967-2024</h2>
         <hr>
-
         <div class="topnav">
             <a class="active" href="home">trang chủ</a>
-            <a href="#intro"> giới thiệu</a>
-            <a href="#notice"> tin tức & hoạt động</a>
+            <a href="#intro">giới thiệu</a>
+            <a href="#notice">tin tức & hoạt động</a>
             <a href="#admissions">tuyển sinh</a>
             <a href="#contact">liên hệ</a>
             <input type="text" placeholder="nhập từ khóa tìm kiếm">
-       
         </div>
     </div>
 
-         
-            <div class="slider">
+    <div class="notice">
+        <div class="sidebar" id="notice">
+            <h3>Danh mục</h3>
+            <hr>
+            <a href="news">Tin Tức</a>
+            <a href="event">Sự kiện</a>
+            <a href="notice">Thông báo</a>
+            <a href="acts">Hoạt động Đoàn</a>
+            <a href="clubs">Câu lạc bộ</a>
+            <a href="creative">Sáng tác</a>
+        </div>
 
-               <div class="slides">
-                    <div class="slide"><img src ="assets\img\428452234_413618784369610_7205195688485556290_n.jpg" alt="Slide 1"></div>
-                    <div class="slide"><img src="assets\img\445473858_469304458801042_3852185832578998145_n.jpg" alt="Slide 2"></div>
-                    <div class="slide"><img src="assets\img\449123605_10226365389975296_5429894495260102033_n.jpg" alt="Slide 3"></div>
-                    <div class="slide"><img src="assets\img\316553597_204151095316381_4090849243822756259_n.jpg" alt="Slide 4"></div>
-                    
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/img/428452234_413618784369610_7205195688485556290_n.jpg" alt="Slide 1">
+                    <div class="caption">CON CẶC</div>
                 </div>
             </div>
-            
-            <script>
-                
-                let currentSlide = 0;
-                const slides = document.querySelectorAll('.slide');
-      
-                function showSlide(index) {
-                    if (index >= slides.length) {
-                        currentSlide = 0;
-                    } else if (index < 0) {
-                        currentSlide = slides.length - 1;
-                    } else {
-                        currentSlide = index;
-                    }
-                    const offset = -currentSlide * 100;
-                    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-                }
-      
-                function nextSlide() {
-                    showSlide(currentSlide + 1);
-                }
-      
-                function prevSlide() {
-                    showSlide(currentSlide - 1);
-                }
-      
-                setInterval(nextSlide, 4000);      
-            </script>
-
- 
-    <div class="contents">
-
-          
-        <div class="notice">
-
-
-            <div class="sidebar" id ="notice">
-            
-                <h3>Danh mục</h3>
-                <hr>      
-                <a href="news"> Tin Tức</a> 
-                <a href="event"> Sự kiện</a>
-                <a href="notice">Thông báo</a>
-                <a href="acts">Hoạt động Đoàn</a>
-                <a href="clubs">Câu lạc bộ</a>
-                <a href="creative">Sáng tác</a>     
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/img/316553597_204151095316381_4090849243822756259_n.jpg" alt="Slide">
+                    <div class="caption">CON CẶC</div>
+                </div>
             </div>
-
-
-
-            <div class="board">
-
-            <h2>TIN TỨC</h2>
-            
-            
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/img/441404868_465013102563511_5345420447919386016_n.jpg" alt="Slide">
+                    <div class="caption">CON CẶC</div>
+                </div>
             </div>
-
-
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/img/449123605_10226365389975296_5429894495260102033_n.jpg" alt="Slide">
+                    <div class="caption">CON CẶC</div>
+                </div>
+            </div>
         </div>
-
-        
-
-        <section id ="intro">
-            <h2 style="color:#0984e3;text-align: center;">TRƯỜNG TRUNG HỌC PHỔ THÔNG CAO LỘC</h2>
-            <h3>lịch sử phát triển</h3>
-            <p>Trường cấp III Cao Lộc, Lạng Sơn được thành lập vào 7/1967 tại Khòn Lượt xã Gia Cát, huyện Cao Lộc, tỉnh Lạng Sơn. Từ lúc thành lập, do chiến tranh phá hoại từ Mỹ, trường phải chuyển địa điểm trong nhiều lần. Năm 2007, nhà trường xây mới ở khối 3 thị trấn Cao Lộc, huyện Cao Lộc, tỉnh Lạng Sơn có cơ sở vật chất đầy đủ, khang trang, đáp ứng học tập của con em huyện Cao Lộc.</p>
-            </section>
-          
-
-        <section id ="admissions">
-
-            <h2>thông tin tuyển sinh 2024-2025</h2>
-            <p>contents</p>
-        </section>
-        
-      <section id ="contact">
-        <h2>Liên hệ</h2>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.6220359050862!2d106.7632168758887!3d21.87211005827828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36b54e5956eb10a1%3A0xebdce0109098c4ca!2zVHLGsOG7nW5nIFRIUFQgQ2FvIEzhu5lj!5e0!3m2!1svi!2s!4v1722590467948!5m2!1svi!2s" width="1250" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      </section>
+    </div>
+    <div class="board">
+        <h2>TIN TỨC</h2>
     </div>
 
 
+    <section id="intro">
+        <h2 style="color:#0984e3;text-align: center;">TRƯỜNG TRUNG HỌC PHỔ THÔNG CAO LỘC</h2>
+        <h3>lịch sử phát triển</h3>
+        <p>Trường cấp III Cao Lộc, Lạng Sơn được thành lập vào 7/1967 tại Khòn Lượt xã Gia Cát, huyện Cao Lộc, tỉnh Lạng
+            Sơn. Từ lúc thành lập, do chiến tranh phá hoại từ Mỹ, trường phải chuyển địa điểm trong nhiều lần. Năm 2007,
+            nhà trường xây mới ở khối 3 thị trấn Cao Lộc, huyện Cao Lộc, tỉnh Lạng Sơn có cơ sở vật chất đầy đủ, khang
+            trang, đáp ứng học tập của con em huyện Cao Lộc.</p>
+    </section>
+
+    <section id="admissions">
+        <h2>thông tin tuyển sinh 2024-2025</h2>
+        <p>contents</p>
+    </section>
+
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.6220359050862!2d106.7632168758887!3d21.87211005827828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36b54e5956eb10a1%3A0xebdce0109098c4ca!2zVHLGsOG7nW5nIFRIUFQgQ2FvIEzhu5lj!5e0!3m2!1svi!2s!4v1722590467948!5m2!1svi!2s"
+            width="1250" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
     <div class="footer">
         <div id="menufooter">
-
             <a href="home">trang chủ</a>
-            <a href="#intro"> giới thiệu</a>
-            <a href="#notice"> tin tức & hoạt động</a>
-            <a href="#Admissions">tuyển sinh</a>
+            <a href="#intro">giới thiệu</a>
+            <a href="#notice">tin tức & hoạt động</a>
+            <a href="#admissions">tuyển sinh</a>
             <a href="#contact">liên hệ</a>
             <hr>
-
         </div>
-      <form >
-        <ul>
-        <li>Địa chỉ: Ngõ 25 Đường Khòn Cuổng, Hợp Thành, Cao Lộc, Lạng Sơn</li>        
-        <li>Điện thoại: 0327135413 </li> 
-        <li>Email:contactus@example.com</li> 
-        <li>Mạng xã hội: </li>
-            <a href="https://www.facebook.com/groups/1588512991361067/user/100071644760882/">
-
-                <img src="assets\facebook-social-media-icon-symbol-illustration-free-vector.jpg" width="40" height="35" style="border-radius: 25px;"> </a>
-        </ul>
-
-      </form>
-
-      <hr>
+        <form>
+            <ul>
+                <li>Địa chỉ: Ngõ 25 Đường Khòn Cuổng, Hợp Thành, Cao Lộc, Lạng Sơn</li>
+                <li>Điện thoại: 0327135413</li>
+                <li>Email: contactus@example.com</li>
+                <li>Mạng xã hội: </li>
+                <a href="https://www.facebook.com/groups/1588512991361067/user/100071644760882/">
+                    <img src="assets/facebook-social-media-icon-symbol-illustration-free-vector.jpg" width="40"
+                        height="35" style="border-radius: 25px;">
+                </a>
+            </ul>
+        </form>
+        <hr>
     </div>
-
-
-    
 </body>
+
 </html>

@@ -4,34 +4,27 @@ body {
     padding: 0;
     background-color: #dfe6e9;
     overflow: scroll;
-    
-    
 }
 
-
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-transform: uppercase;
 }
-
 
 #header {
     padding: 5px;
     padding-bottom: 2px;
-    color:#f4f4f4;
+    color: #f4f4f4;
     background-color: rgb(46, 100, 225);
     border: none;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .topnav {
     overflow: hidden;
-    background-color:rgb(46, 100, 225);
-
-
-
+    background-color: rgb(46, 100, 225);
 }
 
 .topnav a {
@@ -42,46 +35,49 @@ h1, h2, h3 {
     text-decoration: none;
     font-size: 17px;
     border-right: 1px solid none;
-  }
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: rgb(9, 68, 208);
     color: black;
-  }
+}
 
-  .topnav a.active {
+.topnav a.active {
     background-color: rgb(20, 81, 223);
     color: white;
-  }
+}
 
 
- 
-  .topnav input[type = text] {
-    float:right;
+
+.topnav input[type=text] {
+    float: right;
     padding: 6px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-  }
- 
+}
 
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input,[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
+
+@media screen and (max-width: 600px) {
+
+    .topnav a,
+    .topnav input,
+    [type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
     }
+
     .topnav input[type=text] {
-      border: 1px solid #ccc;
+        border: 1px solid #ccc;
     }
-  }
-  
+}
 
-  
+
 .slider {
     padding: 0 0 0;
     position: relative;
@@ -91,23 +87,21 @@ h1, h2, h3 {
     margin: auto;
     text-align: left;
     overflow: hidden;
-
-
-    
-    ;
 }
+
 .slides {
     display: flex;
     transition: transform 0.5s ease;
 }
+
 .slide {
     min-width: 100%;
     box-sizing: border-box;
 }
+
 .slide img {
     width: 100%;
 }
-
 
 
 .footer {
@@ -129,20 +123,16 @@ iframe {
 }
 
 .sidebar {
-
     border: none;
     background-color: white;
     width: 200px;
     height: 350px;
     padding: 20px;
-    
     border-radius: 5px;
-
-
 }
 
 
-.sidebar a{
+.sidebar a {
     text-align: left;
     display: block;
     padding: 10px;
@@ -150,31 +140,78 @@ iframe {
     text-decoration: none;
     text-transform: inherit;
     font-size: 18px;
-    color:#34495e;
+    color: #34495e;
     border-radius: 5px;
 }
 
 
 .sidebar a:hover {
     background-color: #636e72;
-    color:white;
+    color: white;
 
 }
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 
 .notice {
-    border: none;
-    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
     border-radius: 10px;
-    margin: 10px;
+    gap: 20px;
 }
 
-.board{
-    
-    border: none;
-    background-color: white;
-    position:absolute;
-   
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
 
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.slide {
+    flex: 1 0 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.board {
+    width: 300px;
+    /* Chiều rộng của board */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .news {
@@ -185,42 +222,41 @@ iframe {
 
 #intro {
     text-align: left;
-        border: none;
-        background-color: white;
-        padding: 20px;
-        padding-top: 30px;
-        border-radius: 10px;
-        margin: 10px;
-    }
+    border: none;
+    background-color: white;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
 
-    #admissions {
+#admissions {
 
-            border: none;
-            background-color: white;
-            padding: 20px;
-            padding-top: 30px;
-            border-radius: 10px;
-            margin: 10px;
-        
-    }
+    border: none;
+    background-color: white;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin: 10px;
 
-    #contact {
-        border: none;
-        text-align: center;
-            background-color: white;
-            padding: 20px;
-            padding-top: 30px;
-            border-radius: 10px;
-            margin: 10px;
-            overflow: hidden;
-    }
+}
+
+#contact {
+    border: none;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
 
 
 .footer a {
-    color:#dcdcdc;
+    color: #dcdcdc;
     padding: 10px;
     margin: 10px;
-    
-    
-}
 
+
+}
